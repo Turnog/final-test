@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #fff;
+    z-index: 1;
+    border-bottom: 0.05rem solid #545a63;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 1px 1px 3px rgb(122, 122, 122);
+    background-color: #dbdbdb;
+    height: 8%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav{
+    display: inline-block;
+    flex: 1.5;
+}
+
+.nav, .subnav{
+    list-style-type: none;   
+}
+
+.nav li{
+    display: inline-block;
+    position: relative; 
+}
+.nav > li{
+    width: 14%;
+   
+}
+.nav >li >a{
+    color: #242424;
+    
+}
+
+
+.nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 14px;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+.nav li:hover .subnav {
+    display: block;
+}
+.nav >li:hover> a{
+    background-color: #eee;
+    color: #000;
+}
+
+.nav .subnav{      
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 6px black;
+}
+.nav .subnav a{
+    color: #000;
+   
+}
+.nav .subnav li{
+  width: 100%;
+}
+.nav .subnav li:hover{
+    background-color: #bebebe;
+    color: #000;
+}
+.nav-arrow-down{
+    font-size: 14px;
+}
+.header .search-btn{
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.header .search-icon{
+    color:#bebebe;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+.content{
+    margin-top: 10px;
+    padding-top: 40px;
+
+}
+
+.content .text-content{
+    /* position: absolute;
+    bottom: 47px;
+    width: 100%;*/
+    text-align: center; 
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.content .text-heading{
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.content .text-description{
+    font-size: 24px;
+    margin-top: 25px;   
+}
+
+ul.products{
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 10px;
+    right: 10px;
+}
+
+ul.products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.8rem;
+  box-shadow: 2px 2px 6px black;
+}
+ul.products li .product-top .product-thumb {
+    display: block;
+}
+ul.products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .product-top .product-thumb img{
+    display: block;
+
+}
+ul.products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -37px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.products li:hover a.buy-now{
+    bottom: 0px;
+}
+ul.products li .product-info{
+    display:flex;
+    flex-flow: row wrap;
+    width: 100%;   
+    justify-content:space-between;
+    align-items: center;
+    line-height: 2rem;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+ul.products li .product-info a{
+    text-decoration: none;
+}
+ul.products li .product-info p{
+    /* màu thẻ trái tim  */
+    color: rgb(224, 1, 1);
+}
+
+ul.products li .product-info a.product-name{
+    color: #334862;
+
+}
+
+.product-info .eye-btn {
+    display:flex;
+    flex-flow: row wrap; 
+
+}
+.product-info .eye-btn p{
+    margin-right: 1rem;
+}
+.product-info .eye-btn i{
+    margin-top: 0.4rem;
+}
+
+.search-btn #search-div{
+    width: 50%;
+    height: 75%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.search-btn #search-div:hover{
+    cursor: pointer;
+}
